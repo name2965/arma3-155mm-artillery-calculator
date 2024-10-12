@@ -6,8 +6,10 @@ Normally, it is not necessary because a ballistic computer can be used, but it i
 
 Due to the limitations of the Python sympy module and other reasons, the currently supported range is as follows.
 
+```
 Range: 1400m ~ 29900m
 
 Charge-level: 1~3
 
 angle: only low angle elevation
+```
