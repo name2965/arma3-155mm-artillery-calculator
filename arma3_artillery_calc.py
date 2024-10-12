@@ -21,6 +21,9 @@ def artillery_calc_mod1():
     angle = m.atan2((x1 - x2), (y1 - y2)) * float(Fraction(180, Fraction(np.pi)) * Fraction(6400, 360))
     rx = round(np.sqrt(((x1 - x2)**2) + ((y1 - y2)**2)))
 
+    if rx % 10 != 0:
+        rx += 10 - (rx%10)
+
     if rx < 1400 or rx > 29900:
         print('invalid distance')
         return
@@ -70,6 +73,9 @@ def artillery_calc_mod2():
     rx = int(input('distance between you and the target (minimum = 1400) > '))
     z1 = int(input('your altitude > '))
     z2 = int(input('target altitude > '))
+
+    if rx % 10 != 0:
+        rx += 10 - (rx%10)
 
     if rx < 1400 or rx > 29900:
         print('invalid distance')
