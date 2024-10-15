@@ -22,16 +22,16 @@ def artillery_calc_mod1():
         print('invalid distance')
         print('distance : ' + str(rx))
         return
-    elif rx >= 300 and rx < 2400:
+    elif rx >= 300 and rx < 2500:
         charge_level = 0
         v = velocity_table[charge_level]
-    elif rx >= 2400 and rx < 6000:
+    elif rx >= 2500 and rx < 6100:
         charge_level = 1
         v = velocity_table[charge_level]
-    elif rx >= 6000 and rx < 15400:
+    elif rx >= 6100 and rx < 15500:
         charge_level = 2
         v = velocity_table[charge_level]
-    elif rx >= 15400 and rx <= 29900:
+    elif rx >= 15500 and rx <= 29900:
         charge_level = 3
         v = velocity_table[charge_level]
 
@@ -69,7 +69,7 @@ def artillery_calc_mod1():
 
 def artillery_calc_mod2():
 
-    rx = int(input('distance between you and the target (minimum = 1800) > '))
+    rx = int(input('distance between you and the target (minimum = 300) > '))
     z1 = int(input('your altitude > '))
     z2 = int(input('target altitude > '))
 
@@ -128,9 +128,6 @@ if __name__ == '__main__':
         artillery_calc_mod1()
     elif mode == 2:
         artillery_calc_mod2()
-    else:
-        print('[+] invalid input')
-        print('[+] please input 1 or 2')
     else:
         print('[+] invalid input')
         print('[+] please input 1 or 2')
