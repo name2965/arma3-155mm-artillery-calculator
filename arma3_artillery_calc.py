@@ -77,16 +77,16 @@ def artillery_calc_mod2():
         print('invalid distance')
         print('distance : ' + str(rx))
         return
-    elif rx >= 300 and rx < 2400:
+    elif rx >= 300 and rx < 2500:
         charge_level = 0
         v = velocity_table[charge_level]
-    elif rx >= 2400 and rx < 6000:
+    elif rx >= 2500 and rx < 6100:
         charge_level = 1
         v = velocity_table[charge_level]
-    elif rx >= 6000 and rx < 15400:
+    elif rx >= 6100 and rx < 15500:
         charge_level = 2
         v = velocity_table[charge_level]
-    elif rx >= 15400 and rx <= 29900:
+    elif rx >= 15500 and rx <= 29900:
         charge_level = 3
         v = velocity_table[charge_level]
 
