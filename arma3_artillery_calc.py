@@ -128,8 +128,11 @@ def artillery_calc_mod1(art_type):
 
     print('============================================')
     print('[+] Shooting Angle : ' + str(round(angle)))
-    print('[+] Low angle elevation : ' + str(round(sk)))
-    print('[+] Low ELEV ETA : ' + str(eta_l))
+
+    if art_type != 3:
+        print('[+] Low angle elevation : ' + str(round(sk)))
+        print('[+] Low ELEV ETA : ' + str(eta_l))
+
     print('[+] High angle elevation : ' + str(round(sa)))
     print('[+] High ELEV ETA : ' + str(eta_h))
     print('[+] Charge level : ' + str(charge_level))
@@ -164,8 +167,11 @@ def artillery_calc_mod2(art_type):
     sa *= (6400/360)
 
     print('============================================')
-    print('[+] Low angle elevation : ' + str(round(sk)))
-    print('[+] Low ELEV ETA : ' + str(eta_l))
+
+    if art_type != 3:
+        print('[+] Low angle elevation : ' + str(round(sk)))
+        print('[+] Low ELEV ETA : ' + str(eta_l))
+
     print('[+] High angle elevation : ' + str(round(sa)))
     print('[+] High ELEV ETA : ' + str(eta_h))
     print('[+] Charge level : ' + str(charge_level))
